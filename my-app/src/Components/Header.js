@@ -1,10 +1,20 @@
 import React from "react";
 import {AppBar, Toolbar} from "@material-ui/core";
+import {Menu, MenuOpen} from "@material-ui/icons";
 
-export default function Header() {
+export default function Header({menuOpen, setMenuOpen}) {
   return (
-    <AppBar>
-      <Toolbar className="toolbar"></Toolbar>
+    <AppBar position="static">
+      <Toolbar className="toolbar">
+        <div
+          onClick={() => {
+            !menuOpen ? setMenuOpen(true) : setMenuOpen(false);
+          }}
+          className="menu-icon"
+        >
+          {menuOpen ? <MenuOpen /> : <Menu />}
+        </div>
+      </Toolbar>
     </AppBar>
   );
 }
