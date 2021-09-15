@@ -7,6 +7,7 @@ export default function Header({menuOpen, setMenuOpen}) {
     <AppBar position="static">
       <Toolbar className="toolbar">
         <div
+          className="menu-icon"
           onClick={() => {
             !menuOpen ? setMenuOpen(true) : setMenuOpen(false);
           }}

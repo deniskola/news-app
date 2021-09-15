@@ -1,3 +1,17 @@
 .toolbar {
   background-color: black;
 }
+
+.menu-icon:hover {
+  cursor: pointer;
+}
+
+.menu-list-container {
+  position: absolute;
+  left: 9px;
+}
+
+.menu-list {
+  width: 100%;
+  width: 200px;
+}
