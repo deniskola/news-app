@@ -1,5 +1,5 @@
 import React from "react";
-import {AppBar, Toolbar} from "@material-ui/core";
+import {AppBar, Toolbar, Typography} from "@material-ui/core";
 import {Menu, MenuOpen} from "@material-ui/icons";
 
 export default function Header({menuOpen, setMenuOpen}) {
@@ -15,6 +15,8 @@ export default function Header({menuOpen, setMenuOpen}) {
         >
           {menuOpen ? <MenuOpen /> : <Menu />}
         </div>
+        <Typography className="logo-text">News App</Typography>
+        <div></div>
       </Toolbar>
     </AppBar>
   );
