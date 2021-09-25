@@ -24,3 +24,14 @@
 .card-media {
   height: 240px;
 }
+
+.categories-container {
+  background-color: rgba(224, 224, 224, 0.616);
+  font-weight: bolder;
+}
+
+@media only screen and (max-width: 800px) {
+  .side-grid {
+    display: none;
+  }
+}
