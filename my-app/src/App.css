@@ -1,3 +1,7 @@
+body {
+  overflow-y: scroll;
+}
+
 .toolbar {
   background-color: black;
   display: flex;
@@ -14,6 +18,8 @@
 .menu-list-container {
   position: absolute;
   left: 9px;
+  background-color: black;
+  z-index: 10;
 }
 
 .menu-list {
