@@ -10,7 +10,7 @@ import {
   Typography,
   Container,
 } from "@material-ui/core";
-import staticData from "../Data/StaticData";
+import staticData from "../../Data/StaticData";
 
 export default function Feed({categoryFilter, noFilter}) {
   return (
