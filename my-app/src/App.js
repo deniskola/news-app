@@ -5,6 +5,7 @@ import {useState} from "react";
 import Menu from "./Components/Menu";
 import Home from "./Components/Home/Home";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import ItemDetails from "./Components/Home/ItemDetails";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,6 +17,7 @@ function App() {
         {menuOpen && <Menu />}
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/:id" component={ItemDetails} />
         </Switch>
       </div>
     </Router>
