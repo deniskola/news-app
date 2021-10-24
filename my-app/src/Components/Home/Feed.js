@@ -30,7 +30,6 @@ export default function Feed({categoryFilter, noFilter}) {
                 <CardMedia
                   className="card-media"
                   image="http://futureuniversity.com/wp-content/uploads/sites/9/2015/02/default-placeholder-1024x1024-570x321.png"
-                  title="Contemplative Reptile"
                 />
                 <CardContent>
                   <Typography
@@ -49,7 +48,9 @@ export default function Feed({categoryFilter, noFilter}) {
                     color="textSecondary"
                     component="p"
                   >
-                    {item.content}
+                    {item.content.length > 130
+                      ? item.content.substring(0, 127) + "..."
+                      : item.content}
                   </Typography>
                 </CardContent>
               </CardActionArea>
